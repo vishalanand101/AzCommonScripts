@@ -35,7 +35,7 @@ foreach ($subscriptionId in $subscriptionsId) {
             $uri = "https://management.azure.com$($networkinterface)?api-version=2024-01-01"
             $ipaddress = Get-PvtIpAddress -Uri $uri -token $token
             if($ipaddress){
-                $host1 +=[PSCustomObject]@{
+                $host +=[PSCustomObject]@{
                     IPAddress = $ipaddress
                     HostName = $PrivateFQDN
                     
