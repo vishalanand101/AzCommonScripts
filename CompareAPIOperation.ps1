@@ -4,7 +4,7 @@ $subscriptionId = ""
 $resourceGroup = ""
 $apimServiceName = ""
 
-$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName $resourceGroup -ServiceName $apimname
+$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName $resourceGroup -ServiceName $apimServiceName
 $apis=Get-AzApiManagementApi -Context $ApiMgmtContext
 $apiIds = $apis.ApiId
 
